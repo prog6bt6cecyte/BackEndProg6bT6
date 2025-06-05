@@ -1,7 +1,7 @@
 import { TemaController } from "../controllers/tema.controller";
 
 export class TemaRoutes {
-    private temaController: temaController = new temaController();
+    private temaController: TemaController = new TemaController();
     public routes(app): void {
         app.route('/tema')
         .get(this.temaController.obtenerTemas)
